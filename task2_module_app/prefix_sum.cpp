@@ -1,6 +1,6 @@
 #include "prefix_sum.hpp"
 
-int* biv::calc_prefix_sum(int*& arr, const int arr_size, const int max_value) {
+int* drw::calc_prefix_sum(int*& arr, const int arr_size, const int max_value) {
     int* frequency_arr = new int[max_value];
     for (int i = 0; i < arr_size ; i++) {
         frequency_arr[arr[i]] += 1;

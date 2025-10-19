@@ -2,7 +2,7 @@
 #include "algorithm"
 #include "iostream"
 
-void biv::handle_requests(int*& arr, const int requests_amount, const int max_val) {
+void drw::handle_requests(int*& arr, const int requests_amount, const int max_val) {
     int left_pointer;
     int right_pointer;
     for (int i = 0; i < requests_amount; i++) {

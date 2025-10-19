@@ -9,15 +9,15 @@ int main() {
     const int max_val = 199;
     std::cout << "Введите желаемую длину массива: " << std::endl;
     std::cin >> arr_len;
-    int* arr = biv::generate_arr(arr_len);
-    biv::print_array("Cгенерированный массив: ", arr, arr_len);
-    int* prefix_sum_arr = biv::calc_prefix_sum(arr, arr_len, max_val);
+    int* arr = drw::generate_arr(arr_len);
+    drw::print_array("Cгенерированный массив: ", arr, arr_len);
+    int* prefix_sum_arr = drw::calc_prefix_sum(arr, arr_len, max_val);
     delete[] arr;
     
     int requests_amount;
     std::cout << std::endl << "Введите желаемое количество запросов: " << std::endl;
     std::cin >> requests_amount;
-    biv::handle_requests(prefix_sum_arr, requests_amount, max_val);
+    drw::handle_requests(prefix_sum_arr, requests_amount, max_val);
     
     delete[] prefix_sum_arr;
 
