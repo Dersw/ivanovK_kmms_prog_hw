@@ -12,8 +12,8 @@ void drw::handle_requests(int*& arr, const int requests_amount, const int max_va
         std::cout << "Введите правую границу поиска: " << std::endl;
         std::cin >> right_pointer;
         
-        int left_border = std::max(left_pointer, 0);
-        int right_border = std::min(max_val, right_pointer - 1);
+        int left_border = std::min(max_val, std::max(left_pointer, 0));
+        int right_border = std::max(0, std::min(max_val, right_pointer));
         int final_value = arr[right_border] - arr[left_border];
         std::cout << "В области между правой и левой границей находятся " << final_value << " элемент(a/oв)" << std::endl;
     }
