@@ -1,6 +1,5 @@
 #include "generator.hpp"
 #include <ctime>
-#include <iostream>
 #include <random>
 
 int* drw::generate_arr(const int arr_size) {

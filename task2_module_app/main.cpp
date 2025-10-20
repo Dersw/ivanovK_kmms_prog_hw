@@ -18,7 +18,6 @@ int main() {
     std::cout << std::endl << "Введите желаемое количество запросов: " << std::endl;
     std::cin >> requests_amount;
     drw::handle_requests(prefix_sum_arr, requests_amount, max_val);
-    
     delete[] prefix_sum_arr;
 
     return 0;
