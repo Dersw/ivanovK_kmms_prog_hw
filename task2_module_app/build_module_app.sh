@@ -1,4 +1,4 @@
-CPP_FILES="generator.cpp io.cpp prefix_sum.cpp main.cpp request_handler.cpp"
+CPP_FILES="generator.cpp io.cpp main.cpp request_handler.cpp"
 APP=example
 DIR=bin
 
