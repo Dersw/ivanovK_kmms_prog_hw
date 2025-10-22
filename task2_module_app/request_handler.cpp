@@ -1,6 +1,6 @@
 #include "request_handler.hpp"
-#include "algorithm"
-#include "iostream"
+#include <algorithm>
+#include <iostream>
 
 void drw::handle_requests(int*& arr, const int arr_size, const int requests_amount, const int max_val) {
     int* frequency_arr = new int[max_val + 1];
@@ -38,7 +38,6 @@ void drw::handle_requests(int*& arr, const int arr_size, const int requests_amou
             std::cout << "В области между правой и левой границей находятся "
                       << final_value << " элементов" << std::endl;
         }
-        
     }
     delete[] prefix_sum_arr;
 }
