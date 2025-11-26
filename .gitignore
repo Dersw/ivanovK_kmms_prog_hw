@@ -3,3 +3,4 @@ bin/
 *.ii
 *.s
 *.o
+*.kate-swp
