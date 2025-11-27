@@ -27,28 +27,42 @@ const Dersw::MenuItem* Dersw::study_go_back(const MenuItem* current) {
     return current->parent->parent;
 }
 
-const Dersw::MenuItem* Dersw::study_summ(const MenuItem* current) {
+const Dersw::MenuItem* Dersw::study_algebra_summ(const MenuItem* current) {
     //TODO
     std::cout << current->title << std::endl;
     std::cout << std::endl;
     return current->parent;
 }
 
-const Dersw::MenuItem* Dersw::study_substract(const MenuItem* current) {
+const Dersw::MenuItem* Dersw::study_algebra_substract(const MenuItem* current) {
     //TODO
     std::cout << current->title << std::endl;
     std::cout << std::endl;
     return current->parent;
 }
 
-const Dersw::MenuItem* Dersw::study_multiply(const MenuItem* current) {
+const Dersw::MenuItem* Dersw::study_algebra_multiply(const MenuItem* current) {
     //TODO
     std::cout << current->title << std::endl;
     std::cout << std::endl;
     return current->parent;
 }
 
-const Dersw::MenuItem* Dersw::study_devide(const MenuItem* current) {
+const Dersw::MenuItem* Dersw::study_algebra_devide(const MenuItem* current) {
+    //TODO
+    std::cout << current->title << std::endl;
+    std::cout << std::endl;
+    return current->parent;
+}
+
+const Dersw::MenuItem* Dersw::study_calculus_diff(const MenuItem* current) {
+    //TODO
+    std::cout << current->title << std::endl;
+    std::cout << std::endl;
+    return current->parent;
+}
+
+const Dersw::MenuItem* Dersw::study_calculus_integral(const MenuItem* current) {
     //TODO
     std::cout << current->title << std::endl;
     std::cout << std::endl;
