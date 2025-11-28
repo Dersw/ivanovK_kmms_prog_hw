@@ -7,8 +7,6 @@
 
 
 int main() {
-    std::setlocale(LC_ALL, "");
-
     const Dersw::MenuItem* current = &Dersw::MAIN;
     do {
         current = current->func(current);
