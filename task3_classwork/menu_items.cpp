@@ -23,7 +23,7 @@ namespace {
         &Dersw::STUDY_OTHER_DB,
         &Dersw::STUDY_OTHER_MULTITHREAD_PROG,
         &Dersw::STUDY_OTHER_NET_TECH,
-    };s
+    };
     const int study_other_size = sizeof(study_other_children) / sizeof(study_other_children[0]);
 }
 
@@ -34,7 +34,7 @@ const Dersw::MenuItem Dersw::STUDY_ALGHORITHMS = {
     "2 - Хочу учить алгоритмы и структуры!", Dersw::study_alghorithms, &Dersw::STUDY
 };
 const Dersw::MenuItem Dersw::STUDY_OTHER = {
-    "3 - Хочу учить другие технологии!", Dersw::show_menu, &Dersw::STUDY
+    "3 - Хочу учить другие технологии!", Dersw::show_menu, &Dersw::STUDY, study_other_children, study_other_size
 };
 const Dersw::MenuItem Dersw::STUDY_GO_BACK = {
     "0 - Вернуться назад", Dersw::study_go_back, &Dersw::STUDY
@@ -51,7 +51,7 @@ namespace {
 }
 
 const Dersw::MenuItem Dersw::STUDY = {
-    "1 - Хочу учить программирование!", Dersw::show_menu, &Dersw::MAIN
+    "1 - Хочу учить программирование!", Dersw::show_menu, &Dersw::MAIN, study_children, study_size
 };
 const Dersw::MenuItem Dersw::PLAY_SOCCER = {
     "0 - Хочу играть в футбол!", Dersw::exit, &Dersw::MAIN
@@ -64,3 +64,7 @@ namespace {
     };
     const int main_size = sizeof(main_children) / sizeof(main_children[0]);
 }
+
+const Dersw::MenuItem Dersw::MAIN = {
+    nullptr, Dersw::show_menu, nullptr, main_children, main_size
+};
