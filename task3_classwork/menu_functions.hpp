@@ -3,7 +3,9 @@
 #include "menu.hpp"
 
 namespace Dersw {
-    const MenuItem* show_menu(const MenuItem* current);
+    const Dersw::MenuItem* show_main_menu(const MenuItem* current);
+    const Dersw::MenuItem* show_2lvl_menu(const MenuItem* current);
+    const Dersw::MenuItem* show_3lvl_menu(const MenuItem* current);
 
     const MenuItem* exit(const MenuItem* current);
 

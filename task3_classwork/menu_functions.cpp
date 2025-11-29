@@ -3,19 +3,34 @@
 #include <cstdlib>
 #include <iostream>
 
-const Dersw::MenuItem* Dersw::show_menu(const MenuItem* current) {
-    std::cout << "Привет!!!" << std::endl;
-    for (int i = 1; i < current->children_count; i++) {
-        std::cout << current->children[i]->title << std::endl;
-    }
-    std::cout << current->children[0]->title << std::endl;
-    std::cout << "Обучайка > ";
+namespace {
+    const Dersw::MenuItem* show_menu(const Dersw::MenuItem* current) {
+        for (int i = 1; i < current->children_count; i++) {
+            std::cout << current->children[i]->title << std::endl;
+        }
+        std::cout << current->children[0]->title << std::endl;
+        std::cout << "Обучайка > ";
 
-    int user_input;
-    std::cin >> user_input;
-    std::cout << std::endl;
+        int user_input;
+        std::cin >> user_input;
+        std::cout << std::endl;
 
-    return current->children[user_input];
+        return current->children[user_input];
+        };
+}
+const Dersw::MenuItem* Dersw::show_main_menu(const MenuItem* current) {
+    std::cout << "Главное меню:" << std::endl;
+    return show_menu(current);
+}
+
+const Dersw::MenuItem* Dersw::show_2lvl_menu(const MenuItem* current) {
+    std::cout << "Второй уровень меню:" << std::endl;
+    return show_menu(current);
+}
+
+const Dersw::MenuItem* Dersw::show_3lvl_menu(const MenuItem* current) {
+    std::cout << "Третий уровень меню:" << std::endl;
+    return show_menu(current);
 }
 
 const Dersw::MenuItem* Dersw::exit(const MenuItem* current) {

@@ -34,7 +34,7 @@ const Dersw::MenuItem Dersw::STUDY_ALGHORITHMS = {
     "2 - Хочу учить алгоритмы и структуры!", Dersw::study_alghorithms, &Dersw::STUDY
 };
 const Dersw::MenuItem Dersw::STUDY_OTHER = {
-    "3 - Хочу учить другие технологии!", Dersw::show_menu, &Dersw::STUDY, study_other_children, study_other_size
+    "3 - Хочу учить другие технологии!", Dersw::show_3lvl_menu, &Dersw::STUDY, study_other_children, study_other_size
 };
 const Dersw::MenuItem Dersw::STUDY_GO_BACK = {
     "0 - Вернуться назад", Dersw::study_go_back, &Dersw::STUDY
@@ -51,7 +51,7 @@ namespace {
 }
 
 const Dersw::MenuItem Dersw::STUDY = {
-    "1 - Хочу учить программирование!", Dersw::show_menu, &Dersw::MAIN, study_children, study_size
+    "1 - Хочу учить программирование!", Dersw::show_2lvl_menu, &Dersw::MAIN, study_children, study_size
 };
 const Dersw::MenuItem Dersw::PLAY_SOCCER = {
     "0 - Хочу играть в футбол!", Dersw::exit, &Dersw::MAIN
@@ -66,5 +66,5 @@ namespace {
 }
 
 const Dersw::MenuItem Dersw::MAIN = {
-    nullptr, Dersw::show_menu, nullptr, main_children, main_size
+    nullptr, Dersw::show_main_menu, nullptr, main_children, main_size
 };
